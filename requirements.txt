@@ -2,3 +2,5 @@ tavily-python
 requests
 google-generativeai
 python-dotenv
+huggingface_hub
+fuzzywuzzy
