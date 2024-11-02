@@ -1,10 +1,17 @@
 import requests
 import re
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Fetch the API key from environment variables
+api_key = os.getenv('GITHUB_TOKEN')
 
 def collect_resources(use_cases):
     resources = []
     github_api_url = "https://api.github.com/search/repositories"
-    github_token = "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"
+    github_token = api_key
 
     use_cases_string = "\n".join(use_cases)
 

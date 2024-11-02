@@ -1,5 +1,12 @@
 from tavily import TavilyClient
-client = TavilyClient(api_key="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")
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+# Fetch the API key from environment variables
+api_key = os.getenv('TAVILYCLIENT_API_KEY')
+client = TavilyClient(api_key=api_key)
 
 def research_industry(industry):
     search_query = f"{industry} healthcare trends 2023"

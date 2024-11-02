@@ -1,13 +1,19 @@
 import google.generativeai as genai
+import os
+from dotenv import load_dotenv
 
-genai.configure(api_key='AIzaSyAXyynS94oAsXvplaDJGFHjsIS74Mi6Fh4')
+load_dotenv()
+
+# Fetch the API key from environment variables
+api_key = os.getenv('GEMINI_API_KEY')
+genai.configure(api_key=api_key)
 
 def generate_use_cases(insights):
     # Initialize the Gemini model
     model = genai.GenerativeModel("gemini-1.5-flash")
 
     # Create a prompt based on the industry insights
-    prompt = "Based on the following industry insights, generate relevant AI use cases (minimum 10-15):\n"
+    prompt = "Based on the following industry insights, List relevant AI use cases (15-20):\n"
     for insight in insights:
         prompt += f"- {insight['content']}\n"
     

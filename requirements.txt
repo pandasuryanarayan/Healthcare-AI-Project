@@ -1,3 +1,4 @@
 tavily-python
 requests
 google-generativeai
+python-dotenv
