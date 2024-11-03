@@ -35,3 +35,5 @@ This project implements a Multi-Agent system to generate AI use cases for the he
 ## Output
 
 The use cases and resource links and all other results will be stored in the `data/` directory after generated.
+
+## Demo Video is available in project. Download to see it.
