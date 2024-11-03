@@ -23,18 +23,21 @@ def collect_resources():
 
     # Search for matching datasets using fuzzy matching
     matching_datasets = []
+
+    # Comparison Entries
+    matching_datasets_comparison_results = []
+
     for local_dataset in local_datasets:
-        print(f"Searching for: {local_dataset}")  # Debug statement
+        matching_datasets_comparison_results.append(f"Searching for: {local_dataset}\n")
         datasets = search_datasets(local_dataset)
 
         if not datasets:
-            print("No datasets found.")  # Debug statement
+            matching_datasets_comparison_results.append("No datasets found.\n")
         
         for dataset in datasets:
             dataset_name = dataset.id  # Get the dataset name
-            print("resource dataset name:\n", dataset_name)
             score = fuzz.partial_ratio(local_dataset, dataset_name)
-            print(f"Comparing with: {dataset_name}, Score: {score}")  # Debug statement
+            matching_datasets_comparison_results.append(f"Comparing with: {dataset_name}, Score: {score}\n")
 
             if score > 30:  # Adjust the score threshold as needed
                 matching_datasets.append({
@@ -42,9 +45,26 @@ def collect_resources():
                     "url": f"https://huggingface.co/datasets/{dataset.id}"
                 })
 
-    # Print the matching datasets and their URLs
+    # Print the matching datasets and their URLs or Statement
+    
     if matching_datasets:
-        for dataset in matching_datasets:
-            print(f"Name: {dataset['name']}, URL: {dataset['url']}")
+        # for dataset in matching_datasets:
+        #     print(f"Name: {dataset['name']}, URL: {dataset['url']}")
+        print("Dataset found in Hugging Face... Collecting datasets...")
     else:
         print("No matching datasets found.")
+
+    # Save all Comparison Entries to a file
+    with open('data/matching_datasets_comaparison_results.txt', 'w') as dataset_comparison_file:
+        dataset_comparison_file.writelines(matching_datasets_comparison_results)
+
+    # Save the matching datasets to a file
+    with open('data/huggingface_datasets.txt', 'w') as output_file:
+        if matching_datasets:
+            for dataset in matching_datasets:
+                output_file.write(f"Name: {dataset['name']}, URL: {dataset['url']}\n")
+        else:
+            output_file.write("No matching datasets found.\n")
+
+    print(f"Matching datasets saved to huggingface_datasets.txt")
+    print("Resource Collected.")

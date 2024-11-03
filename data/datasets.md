@@ -1,165 +1,254 @@
 # Datasets Suggestions based On Use Cases
 
-## AI Use Cases in Healthcare (Based on 2023 Trends)
+## AI Use Cases in Healthcare for 2023:
 
-**Patient Engagement and Experience:**
-
-1. **Personalized Health Recommendations:**
+**1. Personalized Patient Engagement:**
 [
-    "physionet/mimic-cxr-jpg",
-    "physionet/mimic-iii-clinical",
-    "ucla/med-i-data-2019",
-    "bmc-data/pubmed-rct",
-    "google/health-data-commons",
-    "ai21labs/pubmedbert" 
-]
-2. **Chatbots for Patient Support:**
-[
-    "convai/conv_ai_dataset",
-    "allenai/persona-chat",
-    "google/med-qa",
-    "microsoft/DialoGPT",
-    "facebook/blenderbot" 
-]
-3. **Virtual Assistants for Medication Management:**
-[
-    "physionet/mimic-iii-clinical",
-    "ucla/med-i-data-2019",
-    "bmc-data/pubmed-rct",
-    "google/health-data-commons",
-    "ai21labs/pubmedbert" 
-]
-4. **Personalized Treatment Plans:**
-[
-    "physionet/mimic-iii-clinical",
-    "ucla/med-i-data-2019",
-    "bmc-data/pubmed-rct",
-    "google/health-data-commons",
-    "ai21labs/pubmedbert" 
+    "clinical-trials",
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021"
 ]
 
-**Internet of Medical Things (IoMT):**
-
-5. **Remote Patient Monitoring:**
+**2. Enhanced Patient Experience:**
 [
-    "physionet/mimic-iii-clinical",
-    "ucla/med-i-data-2019",
-    "bmc-data/pubmed-rct",
-    "google/health-data-commons",
-    "ai21labs/pubmedbert" 
-]
-6. **Predictive Analytics for Disease Prevention:**
-[
-    "physionet/mimic-iii-clinical",
-    "ucla/med-i-data-2019",
-    "bmc-data/pubmed-rct",
-    "google/health-data-commons",
-    "ai21labs/pubmedbert" 
-]
-7. **AI-powered Smart Devices:**
-[
-    "physionet/mimic-iii-clinical",
-    "ucla/med-i-data-2019",
-    "bmc-data/pubmed-rct",
-    "google/health-data-commons",
-    "ai21labs/pubmedbert" 
+    "clinical-trials",
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021",
+    "pubmed",
+    "medlineplus",
+    "clinical-trials",
+    "clinical-trials",
+    "clinical-trials",
+    "clinical-trials"
 ]
 
-**Data-Driven Healthcare:**
-
-8. **Clinical Decision Support:**
+**3. Improving Care Delivery:**
 [
-    "physionet/mimic-iii-clinical",
-    "ucla/med-i-data-2019",
-    "bmc-data/pubmed-rct",
-    "google/health-data-commons",
-    "ai21labs/pubmedbert" 
-]
-9. **Healthcare Fraud Detection:**
-[
-    "physionet/mimic-iii-clinical",
-    "ucla/med-i-data-2019",
-    "bmc-data/pubmed-rct",
-    "google/health-data-commons",
-    "ai21labs/pubmedbert" 
-]
-10. **Drug Discovery and Development:**
-[
-    "huggingface/biodatasets",
-    "google/chembl",
-    "pdb/pdb",
-    "pharmacosmos/clinicaltrials",
-    "ai21labs/pubmedbert" 
+    "clinical-trials",
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021",
+    "pubmed",
+    "medlineplus"
 ]
 
-**Remote Healthcare:**
-
-11. **Telemedicine and Virtual Consultations:**
+**4. Leveraging IoT and Wearable Technology:**
 [
-    "physionet/mimic-iii-clinical",
-    "ucla/med-i-data-2019",
-    "bmc-data/pubmed-rct",
-    "google/health-data-commons",
-    "ai21labs/pubmedbert" 
-]
-12. **Remote Monitoring and Rehabilitation:**
-[
-    "physionet/mimic-iii-clinical",
-    "ucla/med-i-data-2019",
-    "bmc-data/pubmed-rct",
-    "google/health-data-commons",
-    "ai21labs/pubmedbert" 
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021",
+    "mimic-cxr",
+    "nih-chest-x-ray-14"
 ]
 
-**Other AI Use Cases:**
+**5. Optimizing Healthcare Operations:**
+[
+    "clinical-trials",
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021"
+]
 
-13. **Medical Imaging Analysis:**
+**6. Empowering Healthcare Professionals:**
 [
-    "radiopaedia/rsna-pneumonia-detection-challenge",
-    "kaggle/rsna-breast-cancer-detection",
-    "stanfordmlgroup/chexpert",
-    "mayo-clinic/chexpert-v2",
-    "google/med-i-data-2019" 
+    "clinical-trials",
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021",
+    "pubmed",
+    "medlineplus"
 ]
-14. **Robotics in Surgery:**
+
+**7. Enhancing Data Management:**
 [
-    "google/med-i-data-2019",
-    "ucla/med-i-data-2019",
-    "bmc-data/pubmed-rct",
-    "google/health-data-commons",
-    "ai21labs/pubmedbert" 
+    "clinical-trials",
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021"
 ]
-15. **Automated Administrative Tasks:**
+
+**8. Expanding Access to Healthcare:**
 [
-    "physionet/mimic-iii-clinical",
-    "ucla/med-i-data-2019",
-    "bmc-data/pubmed-rct",
-    "google/health-data-commons",
-    "ai21labs/pubmedbert" 
+    "clinical-trials",
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021",
+    "pubmed",
+    "medlineplus",
+    "wmt14",
+    "wmt15",
+    "wmt16",
+    "wmt17",
+    "wmt18",
+    "wmt19",
+    "wmt20",
+    "wmt21",
+    "wmt22",
+    "wmt23"
 ]
-16. **Predictive Maintenance for Medical Equipment:**
+
+**9. Addressing Social Determinants of Health:**
 [
-    "physionet/mimic-iii-clinical",
-    "ucla/med-i-data-2019",
-    "bmc-data/pubmed-rct",
-    "google/health-data-commons",
-    "ai21labs/pubmedbert" 
+    "clinical-trials",
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021"
 ]
-17. **Personalized Cancer Treatment:**
+
+**10. AI for Personalized Medicine:**
 [
-    "google/med-i-data-2019",
-    "ucla/med-i-data-2019",
-    "bmc-data/pubmed-rct",
-    "google/health-data-commons",
-    "ai21labs/pubmedbert" 
+    "clinical-trials",
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021",
+    "pubmed",
+    "medlineplus",
+    "genomics_data",
+    "genomics_data",
+    "genomics_data",
+    "genomics_data"
 ]
-18. **Mental Health Support:**
+
+**11. AI for Mental Health:**
 [
-    "convai/conv_ai_dataset",
-    "allenai/persona-chat",
-    "google/med-qa",
-    "microsoft/DialoGPT",
-    "facebook/blenderbot",
-    "huggingface/datasets",
-    "deepmind/med-qa" 
+    "clinical-trials",
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021"
+]
+
+**12. AI for Medical Imaging:**
+[
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "chestx-ray8",
+    "rsna-pneumonia-detection-challenge",
+    "medical-image-datasets",
+    "medical-image-datasets",
+    "medical-image-datasets",
+    "medical-image-datasets"
+]
+
+**13. AI for Drug Delivery Systems:**
+[
+    "clinical-trials",
+    "pubmed",
+    "medlineplus"
+]
+
+**14. AI for Healthcare Research:**
+[
+    "clinical-trials",
+    "pubmed",
+    "medlineplus",
+    "CORD-19",
+    "CORD-19",
+    "CORD-19",
+    "CORD-19"
+]
+
+**15. AI for Healthcare Ethics and Regulations:**
+[
+    "clinical-trials",
+    "pubmed",
+    "medlineplus"
+]
+
+**16. AI for Healthcare Workforce Development:**
+[
+    "clinical-trials",
+    "pubmed",
+    "medlineplus"
+]
+
+**17. AI for Healthcare Insurance:**
+[
+    "clinical-trials",
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021"
+]
+
+**18. AI for Healthcare Equity:**
+[
+    "clinical-trials",
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021"
+]
+
+**19. AI for Healthcare Innovation:**
+[
+    "clinical-trials",
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021"
+]
+
+**20. AI for Healthcare Sustainability:**
+[
+    "clinical-trials",
+    "mimic-cxr",
+    "nih-chest-x-ray-14",
+    "physionet-challenge-2012",
+    "physionet-challenge-2017",
+    "physionet-challenge-2019",
+    "physionet-challenge-2020",
+    "physionet-challenge-2021"
 ]

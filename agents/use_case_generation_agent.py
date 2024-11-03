@@ -21,4 +21,15 @@ def generate_use_cases(insights):
     response = model.generate_content(prompt)
     
     # Split the response into individual use cases
-    return response.text.strip().split("\n")
+    use_cases = response.text.strip().split("\n")
+
+    # Save use cases to use_cases.md
+    with open('data/use_cases.md', 'w') as f:
+        f.write("# Collected Use Cases on Insights\n\n")
+        for case in use_cases:
+            f.write(f"{case}\n")
+
+    print("Use Case Generated on Insights.")
+    print("Use cases saved to use_cases.md")
+
+    return use_cases

@@ -20,4 +20,13 @@ def research_industry(industry):
             'content': result['content']
         })
 
+    # Save insights to insights.md
+    with open('data/insights.md', 'w') as f:
+        f.write("# Insights on Suggested Industry\n\n")
+        for insight in insights:
+            f.write(f"{insight}\n")
+    
+    print(f"Insights Gathered for {industry}.")
+    print("Insights saved to insights.md")
+
     return insights

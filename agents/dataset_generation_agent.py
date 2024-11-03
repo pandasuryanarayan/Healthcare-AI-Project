@@ -30,4 +30,12 @@ def generate_datasets(use_cases):
     # Generate dataset keywords using Gemini
     response = model.generate_content(prompt)
     datasets = response.text.strip().split("\n")
-    return datasets
+    
+    # Save datasets to datasets.md
+    with open('data/datasets.md', 'w') as f:
+        f.write("# Datasets Suggestions based On Use Cases\n\n")
+        for dataset in datasets:
+            f.write(f"{dataset}\n")
+
+    print("Datasets Generated for Use Cases.")
+    print("Datasets saved to datasets.md")

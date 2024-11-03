@@ -30,3 +30,6 @@ def extract_datasets_from_md(md_file_path, output_file):
     with open(output_file, 'w') as f:
         for dataset in sorted(unique_datasets):  # Sort if needed
             f.write(f"{dataset}\n")
+
+    print("Extracted Datasets from MD to TEXT.")
+    print("Datasets are saved to datasets_md_text.txt")
