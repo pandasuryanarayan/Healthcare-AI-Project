@@ -36,4 +36,21 @@ This project implements a Multi-Agent system to generate AI use cases for the he
 
 The use cases and resource links and all other results will be stored in the `data/` directory after generated.
 
-## Demo Video is available in project. Download to see it.
+`Demo Video is available in project. Download to see it.`
+
+## Flowchart
+
+Here's the architecture flowchart illustrating your project's agent interactions and data flow. Each component is represented by a box, with arrows showing the sequence and flow of information between agents:
+
+1. **main.py** initiates the flow by calling each agent.
+2. **Industry Research Agent** gathers insights via the Tavily API.
+3. **Use Case Generation Agent** generates use cases from these insights with Google Gemini.
+4. **Dataset Generation Agent** creates keywords based on use cases for dataset retrieval.
+5. **MD to Text Module** converts dataset suggestions from Markdown format to text.
+6. **Resource Collection Agent** searches Hugging Face datasets using fuzzy matching.
+7. **Data Storage** saves outputs into structured Markdown files.
+
+![Flowchart](Flowchart.png)
+
+## Report
+To read report [Click Here](PROJECT_REPORT.md)
